@@ -18,10 +18,13 @@ function moveDodgerRight() {
 
 	const field = document.getElementById("game");
 	const widthField = field.clientWidth;
+	console.log(dodger.style.left);
 
-	if (leftDodger + 40 < widthField) {
-		dodger.style.left = `${leftDodger + 1}px`;
-	}
+	//if (leftDodger + 40 + 1 < widthField) {
+	dodger.style.left = `${leftDodger + 1}px`;
+	//}
+
+	console.log(dodger.style.left);
 }
 
 document.addEventListener("keydown", function (e) {
